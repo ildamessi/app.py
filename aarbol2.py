@@ -60,7 +60,8 @@ if submitted:
     datos_nuevos = pd.DataFrame([[p1, p2, proy, ef]], columns=["Primer_Parcial", "Segundo_Parcial", "Proyecto", "Examen_Final"])
     prediccion = modelo.predict(datos_nuevos)[0]
     st.success(f"Resultado: {'Aprobado' if prediccion == 1 else 'Reprobado'}")
-'''
+
+
 
 # Sobrescribir archivos con la versión corregida
 with open("/mnt/data/app.py", "w", encoding="utf-8") as f:
